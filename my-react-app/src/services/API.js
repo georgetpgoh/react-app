@@ -1,7 +1,8 @@
 // src/services/API.js
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/chat';
+//const API_URL = 'http://localhost:5000/chat';
+const API_URL = 'https://react-app-back-end-qe44.onrender.com/chat';
 
 export const sendMessage = async (message) => {
   try {
