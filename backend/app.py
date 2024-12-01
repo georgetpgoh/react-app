@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify
 from huggingface_hub import InferenceClient
 from flask_cors import CORS
+import os
 
 # Set your Hugging Face API key
-API_KEY = "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"
-
+API_KEY = os.getenv("HF_API_KEY")
 # Initialize Flask app
 app = Flask(__name__)
 
