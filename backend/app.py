@@ -3,12 +3,12 @@ from huggingface_hub import InferenceClient
 from flask_cors import CORS
 import os
 
-# Set your Hugging Face API key
+# Set Hugging Face API key
 API_KEY = os.getenv("HF_API_KEY")
 # Initialize Flask app
 app = Flask(__name__)
 
-# Enable CORS to allow cross-origin requests (useful for local dev)
+# Enable CORS to allow cross-origin requests 
 CORS(app, origins=["https://react-app-4qyy.onrender.com"])
 
 # Initialize the InferenceClient with the Hugging Face API key
@@ -40,18 +40,16 @@ def chat():
             max_tokens=1000
         )
         # Print the completion response to inspect
-        print(completion)
+        #print(completion)
 
-        # Assuming the response contains the chat message in `choices[0].message`
         bot_response = completion['choices'][0]['message']['content']
 
         # Return the chunks as a list of messages
         return jsonify({"response": bot_response})
 
     except Exception as e:
-        # Handle errors
         return jsonify({"error": f"Error processing request: {str(e)}"}), 500
 
 if __name__ == '__main__':
-    # Run the Flask app
+    
     app.run(debug=True)
