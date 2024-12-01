@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import DOMPurify from 'dompurify';
 import { marked } from 'marked';
 import { sendMessage } from '../services/API.js';
-import '../styles/ChatBot.css'; // Styles specific to the chatbot
+import '../styles/ChatBot.css';
 
 const Chatbot = () => {
     const [userMessage, setUserMessage] = useState('');
@@ -48,7 +48,7 @@ const Chatbot = () => {
 
             const botMessage = {
                 sender: 'bot',
-                text: rawHTML,         // Raw HTML content (can be used for markdown rendering)
+                text: rawHTML,
                 sanitizedHTML: sanitizedHTML,  // Sanitized HTML content (safe for injection into the DOM)
             };
 
@@ -56,7 +56,7 @@ const Chatbot = () => {
             setChatHistory((prevHistory) => [...prevHistory, botMessage]);
         } catch (error) {
            
-                console.error('Error sending message', error);
+                // console.error('Error sending message', error);
                 const errorMessage = {
                     sender: 'bot',
                     text: 'Sorry, something went wrong. Please try again.',
@@ -125,8 +125,8 @@ const Chatbot = () => {
                             ref={textAreaRef} // Reference to the textarea
                             value={userMessage}
                             onChange={(event) => setUserMessage(event.target.value)}
-                            onKeyDown={handleKeyDown} // Handle Enter key event
-                            placeholder="Type your message..."
+                            onKeyDown={handleKeyDown} 
+                            placeholder="Type your question here..."
                             className="chat-input"
                         />
                         <button onClick={handleSendMessage} className="send-button">

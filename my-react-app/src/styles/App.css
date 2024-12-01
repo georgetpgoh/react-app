@@ -3,36 +3,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0; /* Remove padding for full-width background */
+  padding: 0; 
   background-color: black;
   background-image: url('../image/background.png');
-  background-size: contain; /* Make the image fit within the container */
-  background-position: center center; /* Center the image */
+  background-size: contain; 
+  background-position: center center; 
   background-repeat: no-repeat;
-  height: 100vh; /* Full viewport height */
+  height: 100vh; 
 }
 
 /* Nav Bar Styling */
 .app-header {
-  width: 100%; /* Ensure it covers the entire width */
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed; /* Fix the navbar to the top */
+  position: fixed; 
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* Slight transparent black background */
-  padding: 10px 0; /* Add vertical padding */
-  z-index: 1000; /* Ensure it sits on top of the content */
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 10px 0; 
+  z-index: 1000; 
 }
 
 /* Title inside the navbar */
 .app-title {
   font-size: 2rem;
   font-weight: 700;
-  color: white; /* White text for visibility */
+  color: white; 
   text-align: center;
-  margin: 0; /* Remove margin */
+  margin: 0; 
 }
 
 /* Main content area */
@@ -41,7 +41,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 60px); /* Adjust height for fixed navbar */
+  height: calc(100vh - 60px); 
   padding: 20px;
-  margin-top: 60px; /* Add space to push content below the navbar */
+  margin-top: 60px; 
 }

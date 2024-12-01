@@ -9,7 +9,8 @@ export const sendMessage = async (message) => {
     const response = await axios.post(API_URL, { message });
     return response;
   } catch (error) {
-    console.error('Error in API call', error);
-    throw error;
+    // console.error('Error in API call', error);
+    
+    return { data: { response: 'Sorry, something went wrong. Please try again later.' } };
   }
 };

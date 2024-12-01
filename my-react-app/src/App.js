@@ -1,13 +1,13 @@
 import React from 'react';
-import Chatbot from './components/ChatBot';
+import Chatbot from './components/ChatBot'; // Import the ChatBot
 import NavBar from './components/NavBar'; // Import the NavBar
-import './styles/App.css'; // Main styles for the App
+import './styles/App.css';
 
 function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <NavBar /> {/* Add the NavBar here */}
+        <NavBar />
       </header>
       <main className="app-main">
         <Chatbot />

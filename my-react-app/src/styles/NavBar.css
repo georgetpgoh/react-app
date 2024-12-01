@@ -6,7 +6,7 @@
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Ensure navbar spans the full width */
+    width: 100%; 
   }
   
   /* Container for the navbar content */
@@ -14,8 +14,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Ensure the container takes the full width of the navbar */
-    padding: 20 20px; /* Adjust for padding */
+    width: 100%; 
+    padding: 20 20px;
   }
   
   /* Logo styling */
@@ -55,7 +55,7 @@
   /* Mobile responsiveness */
   @media screen and (max-width: 768px) {
     .navbar-menu {
-      display: none; /* Hidden menu on mobile */
+      display: none; 
       flex-direction: column;
       gap: 10px;
       position: absolute;
