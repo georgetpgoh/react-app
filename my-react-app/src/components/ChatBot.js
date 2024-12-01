@@ -61,7 +61,7 @@ const Chatbot = () => {
                     sender: 'bot',
                     text: 'Sorry, something went wrong. Please try again.',
                 };
-                setChatHistory((prevHistory) => [...prevHistory, newMessage, errorMessage]);
+                setChatHistory((prevHistory) => [...prevHistory, errorMessage]);
             
         } finally {
             setLoading(false); // Stop loading after the bot responds

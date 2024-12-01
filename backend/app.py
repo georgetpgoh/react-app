@@ -9,7 +9,7 @@ API_KEY = os.getenv("HF_API_KEY")
 app = Flask(__name__)
 
 # Enable CORS to allow cross-origin requests (useful for local dev)
-CORS(app, origins=["https://react-app-4qyy.onrender.com/"])
+CORS(app, origins=["https://react-app-4qyy.onrender.com"])
 
 # Initialize the InferenceClient with the Hugging Face API key
 client = InferenceClient(api_key=API_KEY)
