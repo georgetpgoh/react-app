@@ -60,6 +60,7 @@ const Chatbot = () => {
                 const errorMessage = {
                     sender: 'bot',
                     text: 'Sorry, something went wrong. Please try again.',
+                    sanitizedHTML: '<p>Sorry, something went wrong. Please try again.</p>',
                 };
                 setChatHistory((prevHistory) => [...prevHistory, errorMessage]);
             
