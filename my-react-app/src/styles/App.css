@@ -1,0 +1,47 @@
+/* Background Image Styling */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0; /* Remove padding for full-width background */
+  background-color: black;
+  background-image: url('../image/background.png');
+  background-size: contain; /* Make the image fit within the container */
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Nav Bar Styling */
+.app-header {
+  width: 100%; /* Ensure it covers the entire width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Fix the navbar to the top */
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Slight transparent black background */
+  padding: 10px 0; /* Add vertical padding */
+  z-index: 1000; /* Ensure it sits on top of the content */
+}
+
+/* Title inside the navbar */
+.app-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white; /* White text for visibility */
+  text-align: center;
+  margin: 0; /* Remove margin */
+}
+
+/* Main content area */
+.app-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 60px); /* Adjust height for fixed navbar */
+  padding: 20px;
+  margin-top: 60px; /* Add space to push content below the navbar */
+}
