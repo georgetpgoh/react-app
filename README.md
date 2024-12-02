@@ -45,7 +45,7 @@ This project is a **ReactJS** frontend and a **Flask** backend chatbot applicati
 react-app
 ├── backend
 │   └── app.py  # Flask server code
-├── frontend
+├── my-react-app (front-end)
 │   ├── src
 │   │   ├── components
 │   │   │   └── ChatBot.js  # Chatbot component
